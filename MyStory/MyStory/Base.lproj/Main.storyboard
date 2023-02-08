@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kFH-MQ-Nxb">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sailor Moon-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-Qd-Pg4">
+                                <rect key="frame" x="96.666666666666686" y="121" width="200" height="308"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="sailorMoon" translatesAutoresizingMaskIntoConstraints="NO" id="31G-3e-Q0D">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="CQi-pz-wHv"/>
+                                            <constraint firstAttribute="height" constant="200" id="VEk-vl-bKI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yJ4-eZ-oGd">
+                                        <rect key="frame" x="0.0" y="205" width="200" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwd-Lh-4kg" userLabel="backstoryButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="34.333333333333336"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Backstory">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xas-Ih-D7M"/>
+                                                    <outletCollection property="gestureRecognizers" destination="BbX-LB-tO7" appends="YES" id="Lfx-dD-DU8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF0-oi-zMS" userLabel="characterDevButton">
+                                                <rect key="frame" x="0.0" y="34.333333333333314" width="200" height="34.333333333333343"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Char. Development">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAD-Kx-XXd"/>
+                                                    <outletCollection property="gestureRecognizers" destination="5rT-Z0-xkB" appends="YES" id="V6g-JD-jls"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF8-3y-gkW" userLabel="powerButton">
+                                                <rect key="frame" x="0.0" y="68.666666666666686" width="200" height="34.333333333333343"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Powers">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R92-XW-B0v"/>
+                                                    <outletCollection property="gestureRecognizers" destination="6SJ-zR-u6E" appends="YES" id="wOW-82-tch"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.72221327319999995" green="0.55536721749999995" blue="0.62892952989999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fbv-Qd-Pg4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="Oew-Le-Wng"/>
+                            <constraint firstItem="fbv-Qd-Pg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oIc-U0-y6D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sailor Moon" id="6oa-7J-xvZ"/>
+                    <connections>
+                        <segue destination="AdO-ar-U7c" kind="show" identifier="detailSegue" id="T2r-PN-3eD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BbX-LB-tO7">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="XFV-0g-HoK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5rT-Z0-xkB">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="UgB-0V-Oyf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6SJ-zR-u6E">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="770-py-c0i"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="849.61832061068696" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="JPB-Vq-lV6">
+            <objects>
+                <viewController id="AdO-ar-U7c" customClass="DetailViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJw-F7-fP4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MaO-uz-4js">
+                                <rect key="frame" x="46.666666666666657" y="122" width="300" height="518"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYa-hy-wjj" userLabel="imageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="270"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="270" id="Bk7-Ex-erJ"/>
+                                            <constraint firstAttribute="width" constant="300" id="FN0-5P-B49"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j5Q-h1-Opc" userLabel="text">
+                                        <rect key="frame" x="0.0" y="278" width="300" height="240"/>
+                                        <color key="backgroundColor" red="0.82071520620000005" green="0.63249213019999995" blue="0.71582805760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="TNa-1u-fRi"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k4v-yn-Ffk"/>
+                        <color key="backgroundColor" red="0.82071520618969074" green="0.63249213016836714" blue="0.71582805762192558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MaO-uz-4js" firstAttribute="centerX" secondItem="cJw-F7-fP4" secondAttribute="centerX" id="PHw-F6-XIO"/>
+                            <constraint firstItem="MaO-uz-4js" firstAttribute="top" secondItem="k4v-yn-Ffk" secondAttribute="top" constant="19" id="baY-Ry-biN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M47-EM-OMT"/>
+                    <connections>
+                        <outlet property="imageView" destination="CYa-hy-wjj" id="PD0-wO-PMj"/>
+                        <outlet property="text" destination="j5Q-h1-Opc" id="1Uf-UH-udz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXO-eA-eUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635.8778625954199" y="7.746478873239437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Zj-CO-STv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kFH-MQ-Nxb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6vG-Rr-gLE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x9S-RB-Ugr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48A-Kn-4cT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77.099236641221367" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sailorMoon" width="654" height="654"/>
+    </resources>
+</document>
